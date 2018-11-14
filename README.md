@@ -64,3 +64,7 @@ Now, let's change the assets package and run `lerna version`. We get an error sa
 When we run it, we get prompted to select a new version for both packages ... Even though only `assets` has changed 🤔
 
 ![lb](packages/assets/images/lerna_version_weird.png)
+
+The reason it did this is that i never published any version of the web package. When i changed the assets again, it prompted me only for it.
+
+![lb](packages/assets/images/lerna_version_works.png)
