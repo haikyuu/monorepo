@@ -58,3 +58,5 @@ Let's run `create-react-app web` in the packages folder and **publish a new vers
 Let's see if we can change that.
 
 In the [lerna readme](https://github.com/lerna/lerna#independent-mode), there is `independent` flag. Let's add it to our `package.json`
+
+Now, let's change the assets package and run `lerna version`.

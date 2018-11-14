@@ -4,5 +4,5 @@ module.exports = assets;
 
 function assets() {
   // number of images
-  return 6;
+  return 7;
 }
