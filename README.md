@@ -25,3 +25,22 @@ Let's run `lerna create assets --private --yes`. This will create a folder in th
 
 - let's add the images of the previous steps in the `images` folder.
 - And let's change the `assets.js` to output the number of images.
+
+We wish to publish a new version of the assets package. 🤔 Let's see how we can do that.
+
+- The `lerna publish` command [publishes to npm](https://github.com/lerna/lerna/tree/master/commands/publish#readme) ([source](https://github.com/lerna/lerna/blob/master/commands/publish/index.js#L18-L20)). 🤔 Not what we want, since this is a private package. In the [end of the Readme, there is a deprecated `skip-npm` option](https://github.com/lerna/lerna/tree/master/commands/publish#deprecated-options). It says "call `lerna version` directly"
+- `lerna version`. 🚀
+
+Oops, i have uncommited changes. Ok, let's get a clean git tree first.
+
+It prompts to selection the new version, shows you a summary of the changes and then proceeds.
+
+![step 1](packages/assets/images/lerna_version.png)
+![step 2](packages/assets/images/lerna_version_1.png)
+![step 3](packages/assets/images/lerna_version_2.png)
+
+Notice the `pushing tags ...` in the end. So lerna works with [git tags (handy primer on tags in the link)](https://alblue.bandlem.com/2011/04/git-tip-of-week-tags.html).
+
+Run `git tags -l` to see `v0.0.1` in the list.
+
+And visit the [tags tab](https://github.com/haikyuu/monorepo/releases/tag/v0.0.1) in the github repo to see it there.
