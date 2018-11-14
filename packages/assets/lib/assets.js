@@ -1,7 +1,8 @@
-'use strict';
+"use strict";
 
 module.exports = assets;
 
 function assets() {
-    // TODO
+  // number of images
+  return 3;
 }
