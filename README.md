@@ -60,3 +60,7 @@ Let's see if we can change that.
 In the [lerna readme](https://github.com/lerna/lerna#independent-mode), there is `independent` flag. Let's add it to our `package.json`
 
 Now, let's change the assets package and run `lerna version`. We get an error saying we need to update the `version` to `independent` inside `lerna.json` as well.
+
+When we run it, we get prompted to select a new version for both packages ... Even though only `assets` has changed 🤔
+
+![lb](packages/assets/images/lerna_version_weird.png)
