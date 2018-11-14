@@ -21,7 +21,7 @@ Let's run `lerna create assets --private --yes`. This will create a folder in th
 
 ![Lerna files](packages/assets/images/lerna_create_1.png)
 
-## [Step 3 - let's change some things in the assets package]()
+## Step 3 - let's change some things in the assets package
 
 - let's add the images of the previous steps in the `images` folder.
 - And let's change the `assets.js` to output the number of images.
@@ -44,3 +44,17 @@ Notice the `pushing tags ...` in the end. So lerna works with [git tags (handy p
 Run `git tags -l` to see `v0.0.1` in the list.
 
 And visit the [tags tab](https://github.com/haikyuu/monorepo/releases/tag/v0.0.1) in the github repo to see it there.
+
+## Step 4 - let's add another package: a web app
+
+Last time, we used `lerna create`. But we can also create a folder directly in the `packages` folder.
+
+Let's run `create-react-app web` in the packages folder and **publish a new version** using `lerna version` command.
+
+![lv](packages/assets/images/lerna_version_two_packages.png)
+
+🤔 It seems that all of our packages will have the same version from now on.
+
+Let's see if we can change that.
+
+In the [lerna readme](https://github.com/lerna/lerna#independent-mode), there is `independent` flag. Let's add it to our `package.json`
