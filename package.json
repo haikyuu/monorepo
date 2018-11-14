@@ -5,6 +5,7 @@
     "lerna": "^3.4.3"
   },
   "scripts": {
-    "test": "lerna run test"
+    "test": "lerna run test",
+    "ci": "lerna bootstrap"
   }
 }
