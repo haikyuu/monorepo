@@ -59,4 +59,4 @@ Let's see if we can change that.
 
 In the [lerna readme](https://github.com/lerna/lerna#independent-mode), there is `independent` flag. Let's add it to our `package.json`
 
-Now, let's change the assets package and run `lerna version`.
+Now, let's change the assets package and run `lerna version`. We get an error saying we need to update the `version` to `independent` inside `lerna.json` as well.
