@@ -68,3 +68,13 @@ When we run it, we get prompted to select a new version for both packages ... Ev
 The reason it did this is that i never published any version of the web package. When i changed the assets again, it prompted me only for it.
 
 ![lb](packages/assets/images/lerna_version_works.png)
+
+Let's take a look at our `tags` tab in github.
+
+![lb](packages/assets/images/tags.png)
+
+The tags `v0.0.1` and `v0.0.2` are tags from the `fixed` mode, and the others are from `independent` mode.
+
+Depending on your use case, you'll prefer one mode over the other.
+
+Let's see what else we can do in `independent mode`.
