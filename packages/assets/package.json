@@ -19,10 +19,13 @@
     "url": "git+https://github.com/haikyuu/monorepo.git"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "test": "jest"
   },
   "bugs": {
     "url": "https://github.com/haikyuu/monorepo/issues"
   },
-  "homepage": "https://github.com/haikyuu/monorepo#readme"
+  "homepage": "https://github.com/haikyuu/monorepo#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
 }
