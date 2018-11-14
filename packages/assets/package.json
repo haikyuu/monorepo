@@ -19,7 +19,7 @@
     "url": "git+https://github.com/haikyuu/monorepo.git"
   },
   "scripts": {
-    "test": "jest"
+    "test": "./node_modules/.bin/jest"
   },
   "bugs": {
     "url": "https://github.com/haikyuu/monorepo/issues"
