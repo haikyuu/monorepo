@@ -78,3 +78,9 @@ The tags `v0.0.1` and `v0.0.2` are tags from the `fixed` mode, and the others ar
 Depending on your use case, you'll prefer one mode over the other.
 
 Let's see what else we can do in `independent mode`.
+
+When we make a change to many packages in the same release, we get a tag for each package version. Not that they point to the same commit.
+
+![lb](packages/assets/images/lerna_independent_tags.png)
+
+So far so good.
